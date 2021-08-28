@@ -1,0 +1,414 @@
+/* CSS Reset */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+ ul, li {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+/* CSS Reset */
+/* Typography CSS starts here */
+ @font-face {
+     font-family: 'TypeDynamicSailec';
+     src: url('../font/TypeDynamicSailec.eot');
+     src: url('../font/TypeDynamicSailec.eot') format('embedded-opentype'), url('../font/TypeDynamicSailec.woff2') format('woff2'), url('../font/TypeDynamicSailec.woff') format('woff'), url('../font/TypeDynamicSailec.ttf') format('truetype'), url('../font/TypeDynamicSailec.svg#TypeDynamicSailec') format('svg');
+}
+ @font-face {
+     font-family: 'TypeDynamicSailecBold';
+     src: url('../font/TypeDynamicSailecBold.eot');
+     src: url('../font/TypeDynamicSailecBold.eot') format('embedded-opentype'), url('../font/TypeDynamicSailecBold.woff2') format('woff2'), url('../font/TypeDynamicSailecBold.woff') format('woff'), url('../font/TypeDynamicSailecBold.ttf') format('truetype'), url('../font/TypeDynamicSailecBold.svg#TypeDynamicSailecBold') format('svg');
+}
+ @font-face {
+     font-family: 'TypeDynamicSailecMedium';
+     src: url('../font/TypeDynamicSailecMedium.eot');
+     src: url('../font/TypeDynamicSailecMedium.eot') format('embedded-opentype'), url('../font/TypeDynamicSailecMedium.woff2') format('woff2'), url('../font/TypeDynamicSailecMedium.woff') format('woff'), url('../font/TypeDynamicSailecMedium.ttf') format('truetype'), url('../font/TypeDynamicSailecMedium.svg#TypeDynamicSailecMedium') format('svg');
+}
+/* Typography CSS ends here */
+ :root {
+     --theme_text: background: rgba(21, 20, 66, 1);
+     --white_bg: background-color: #fff;
+}
+ body {
+     font-family: 'TypeDynamicSailec', sans-serif;
+     color: var(--theme_text);
+     font-size: 14px;
+     overflow-x: hidden;
+     background-color: var(--white_bg);
+}
+ .font_80 {
+     font-size: 60px;
+     text-align: center;
+     font-family: 'TypeDynamicSailecMedium';
+}
+ .font_88 {
+     font-size: 60px;
+     font-family: 'TypeDynamicSailecMedium';
+     line-height: 80px;
+}
+/* banner sectio*/
+ .banner {
+     position: relative;
+     background: #fff;
+     padding-bottom: 100px;
+}
+ header {
+     padding-top: 20px;
+     margin-bottom: 20px;
+}
+ .sub-head {
+     font-size: 14px;
+     color: #fff;
+     font-family: 'TypeDynamicSailecMedium';
+}
+ .banner::before {
+     content: '';
+     background:#102421;
+     position: absolute;
+     width: 55%;
+     height: 100%;
+}
+ .bannerhead {
+     color: #fff;
+     font-size: 80px;
+     font-family: 'TypeDynamicSailecBold';
+     line-height: 90px;
+}
+ .bannerContent {
+     color: #D2D2D2;
+     font-size: 22px;
+     font-family: 'TypeDynamicSailec';
+     padding-top: 20px;
+}
+ .bannerbtn {
+     background: #C7E1BF;
+     border-radius: 50px;
+     padding: 20px 30px;
+     font-size: 14px;
+     color: #151442;
+     text-decoration: none;
+     top: 10px;
+     right: 0px;
+}
+ .bannerbtn:hover {
+     color: #151442;
+     text-decoration: none;
+}
+ .bannerflex {
+     display: flex;
+     margin-top: 50px;
+}
+ .bannerflex li:first-child {
+     margin-right: 20px;
+}
+ .bannerImg {
+     width: 100%;
+     height: auto;
+}
+ .badge {
+     border-radius: 50%;
+     background-color: #151442;
+     margin-right: 10px;
+     color: #fff;
+     font-size: 14px;
+}
+/* banner sectio end here*/
+/* Product Section*/
+ .products {
+     padding: 150px 0;
+}
+ .shopProd {
+     margin-top: 80px;
+}
+ .product_thumbnail {
+     text-align: center;
+     padding: 0 20px;
+}
+ .productName {
+     font-size: 36px;
+     color: #151442;
+}
+ .productPrice {
+     font-size: 14px;
+     color: #8F9095;
+}
+ .productInfo {
+     font-size: 16px;
+     color: #8F9095;
+     font-family: 'TypeDynamicSailecMedium';
+     line-height: 24px;
+}
+ .image {
+     opacity: 1;
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+ .middle {
+     transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 20%;
+     right: 0%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     text-align: right;
+}
+ .product_thumbnail:hover .image {
+     opacity: 1;
+}
+ .product_thumbnail:hover .middle {
+     opacity: 1;
+}
+ .text {
+     background-color: #102421;
+     color: white;
+     font-size: 12px;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'TypeDynamicSailecMedium';
+}
+ .text a {
+     color: #fff;
+     text-decoration: none;
+}
+ .posRel {
+     position: relative;
+}
+ .shopNow {
+     position: absolute;
+     border: 1px solid #151442;
+     border-radius: 50px;
+     padding: 20px 30px;
+     font-size: 14px;
+     color: #151442;
+     text-decoration: none;
+     top: 10px;
+     right: 0px;
+}
+ .arrowMRL {
+     margin-left: 20px;
+}
+ .shopNow:hover {
+     color: #151442;
+     text-decoration:none;
+}
+/* product Section End here */
+/*Testimonials*/
+ .testimonials_bg {
+     background: url(../images/testimonials.jpg);
+     width: 100%;
+     height: auto;
+     padding: 150px 0;
+     color: #fff;
+}
+ .clientnoteHead {
+     font-size: 60px;
+     font-family: 'TypeDynamicSailecMedium';
+}
+ .videoLink {
+     font-size: 14px;
+     padding-bottom: 5px;
+     border-bottom: 1px solid #fff;
+     display: inline-block;
+     margin-top: 80px;
+}
+ .reviews {
+     background: #FFF3F3;
+     padding: 50px;
+     color: #342B42;
+}
+ .reviewNote {
+     font-size: 30px;
+     line-height: 50px;
+     position: relative;
+     font-family: 'TypeDynamicSailecMedium';
+     padding: 40px 30px 20px 30px;
+}
+ .reviewNote::before {
+     content: '';
+     background-image: url(../images/quotes1.png);
+     width:34px;
+     height:28px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-size: 100% 100%;
+}
+ .reviewNote::after {
+     content: '';
+     background-image: url(../images/quotes2.png);
+     width:34px;
+     height:28px;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background-size: 100% 100%;
+}
+ .clientNames {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 18px;
+     line-height: 18px;
+     margin-right: 20px;
+}
+ .jobPossition {
+     font-size: 12px;
+}
+ .clientflexbox {
+     display: flex;
+     align-items: center;
+     height: 100%;
+}
+/*Testimonials end here*/
+ .benift {
+     color: #151442;
+}
+ .footHead {
+     font-size: 18px;
+     font-family: 'TypeDynamicSailecMedium';
+}
+ ul.footMenu {
+     margin: 0px;
+     padding: 20px 0;
+     text-align: left;
+     font-family: 'TypeDynamicSailec';
+}
+ ul.footMenu li {
+     padding: 0px 0 15px 0;
+     font-size: 14px;
+}
+ .footAddress {
+     margin: 0px;
+     padding: 20px 0;
+     font-size: 14px;
+     line-height: 30px;
+}
+ .copyRight {
+     margin-top: 50px;
+}
+/* Benfits Section */
+ .shop_benefits {
+     padding:150px 0;
+     background-color: var(--white_bg);
+}
+ .flexBox {
+     display: flex;
+     margin-top: 100px;
+     justify-content: center;
+}
+ .benefits_main {
+     text-align: center;
+}
+ .benefits_main img {
+     margin-bottom: 60px;
+}
+ .benefits_main p {
+     font-family: 'TypeDynamicSailecMedium';
+     font-size: 18px;
+}
+ .flexBox .benefits_main:nth-child(2) {
+     margin-right: 100px;
+     margin-left: 100px;
+}
+/* Benfits Section */
+/* Footer CSS */
+ footer {
+     background-color:rgba(15, 36, 33, 1);
+     color: #fff;
+     padding: 150px 0;
+}
+/* Footer CSS ends */
+ @media (max-width:767px) {
+     .banner {
+         padding-bottom: 15px;
+    }
+     .banner::before {
+         width: 100%;
+    }
+     header .navbar-light .navbar-toggler {
+         padding: 0;
+    }
+     .bannerhead {
+         font-size: 30px;
+         line-height: 40px 
+    }
+     .bannerflex {
+         margin-top: 20px;
+         padding-bottom: 20px;
+    }
+     .bannerbtn {
+         top: 0;
+         padding: 10px;
+    }
+     .products {
+         padding: 40px 0;
+    }
+     .font_80 {
+         font-size: 25px;
+    }
+     .shopNow {
+         position: relative;
+         padding: 10px;
+         display: block;
+    }
+     .testimonials_bg{
+        padding: 40px 0;
+    }
+     .clientnoteHead {
+        font-size: 25px;
+    }
+     .videoLink {
+        margin-top: 0;
+    }
+     .reviews{
+        padding: 20px;
+    }
+     .reviewNote {
+         font-size: 20px;
+         line-height: 30px;
+    }
+     .shop_benefits{
+        padding: 40px 0;
+    }
+     .flexBox{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+     .flexBox .benefits_main:nth-child(2) {
+         margin-right: 0;
+         margin-left: 0;
+    }
+     footer{
+        padding: 40px 0;
+    }
+     .font_88 {
+         font-size: 30px;
+         line-height: 40px;
+    }
+     .copyRight{
+        margin-top: 0;
+    }
+     header .navbar-light .navbar-toggler-icon {
+         background: #fff url(../images/menu.svg);
+         width: 50px;
+         height: 50px;
+         border-radius: 50px;
+         background-size: 100% 100%;
+    }
+     .navbar-collapse{
+        background-color: #fff;
+         padding: 10px;
+         border-top: 1px solid #C7E1BF;
+    }
+}
+ 
